@@ -16,7 +16,8 @@ https://github.com/ObsidianPublisher/obsidian-github-publisher
 3. 在插件 options 中设置一下内容
     1. github configuration > 填写所有信息，包括[token](https://github.com/settings/tokens) 仓库名等，仓库名就是前面 netlify deploy生成的
     2. upload configuration: 建议设置`obsidian path`，而不是`fix path` 这样发布文章后，文件夹结构跟本地的相同
-    3. content's conversion: 有时候我们想隐藏私密内容，方法是在text replacer 中添加 `/%%.*%%/` ，另一边设置为空。这样就不会泄露私密内容
+    3. content's conversion: 有时候我们想隐藏私密内容，方法是在text replacer 中添加 `/` 中的内容
+    ![[Pasted image 20230322202613.png]]
 4. 想要发布的文章的开头添加
 ```
 ---
