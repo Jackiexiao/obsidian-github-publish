@@ -8,6 +8,8 @@ share: true
 总的来说比较好用，用了 mkdocs 这个库来发布
 https://github.com/ObsidianPublisher/obsidian-github-publisher
 
+
+
 ## 我推荐的使用方法
 最简单的方法还是通过 netlify 部署
 
@@ -17,7 +19,7 @@ https://github.com/ObsidianPublisher/obsidian-github-publisher
     1. github configuration > 填写所有信息，包括[token](https://github.com/settings/tokens) 仓库名等，仓库名就是前面 netlify deploy生成的
     2. upload configuration: 建议设置`obsidian path`，而不是`fix path` 这样发布文章后，文件夹结构跟本地的相同
     3. content's conversion: 有时候我们想隐藏私密内容，方法是在text replacer 中添加 `/` 中的内容
-    ![[Pasted image 20230322202613.png]]
+    ![Pasted image 20230322202613.png](Pasted%20image%2020230322202613.png)
 4. 想要发布的文章的开头添加
 ```
 ---
@@ -33,9 +35,15 @@ https://github.com/ObsidianPublisher/publisher-template-netlify/pull/2
 - [ ] jieba 未添加，中文搜索不友好
 - [ ] vercel 作者不愿意merge
 
-## 当前问题
+## 当前问题 Known issue
 - 教程的问题: 实在过于简略，没有图文.... 最好有个 youtube 视频教程
-- 中文搜索不友好
+- 中文搜索不友好，即便加了`jieba`
+
+## 支持的obsidian语法
+> 目前只支持部分 obsidian 语法，下面展示了展示了常见的情况
+
+
+
 
 
 
