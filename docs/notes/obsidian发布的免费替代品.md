@@ -16,17 +16,15 @@ https://github.com/ObsidianPublisher/obsidian-github-publisher
 3. 在插件 options 中设置一下内容
     1. github configuration > 填写所有信息，包括[token](https://github.com/settings/tokens) 仓库名等，仓库名就是前面 netlify deploy生成的
     2. upload configuration: 建议设置`obsidian path`，而不是`fix path` 这样发布文章后，文件夹结构跟本地的相同
-    3. content's conversion: 有时候我们想隐藏私密内容，方法是在text replacer 中添加 `//` ，另一边设置为空。这样就不会泄露私密内容
+    3. content's conversion: 有时候我们想隐藏私密内容，方法是在text replacer 中添加 `/%%.*%%/` ，另一边设置为空。这样就不会泄露私密内容
 4. 想要发布的文章的开头添加
 ```
 ---
 share: true
 ---
 ```
-5. 执行指令（`ctrl + P`）输入 `publish` ，发布你的文章，obsidian提示发布成功后，等十几秒，文章就上传到上述的博客地址中了。
+5. 执行指令（`ctrl + P`）输入 `publish` ，发布你的文章，提示发布成功后，等十几秒，文章就上传到上述的博客地址中了。
 6. 回到第一步生成的 github repo，修改里头的 `mkdocs.yaml` 以便添加你的网站名
-
-%%我生成的token : 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%%
 
 ## 我提的PR
 https://github.com/ObsidianPublisher/publisher-template-netlify/pull/2
