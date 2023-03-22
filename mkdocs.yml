@@ -1,6 +1,7 @@
 site_name: jackiexiao's blog
 site_description: jackiexiao's blog
 site_url: https://blog.jackiexiao.com
+repo_name: Jackiexiao/obsidian-github-publish
 
 theme:
     name: 'material'
