@@ -1,6 +1,6 @@
-site_name: your_site_name # Change this to your site name
-site_description: A cool description of your site
-site_url: https://change_me.io/ # Change this to your site URL
+site_name: jackiexiao's blog
+site_description: jackiexiao's blog
+site_url: https://blog.jackiexiao.com
 
 theme:
     name: 'material'
@@ -137,3 +137,10 @@ extra:
   hooks:
     strip_comments: true
     fix_heading: true
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/realjackiexiao
+    - icon: fontawesome/brands/github
+      link: https://github.com/jackiexiao
+    - icon: fontawesome/brands/zhihu
+      link: https://www.zhihu.com/people/realjackiexiao
