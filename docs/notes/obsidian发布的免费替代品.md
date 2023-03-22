@@ -5,13 +5,19 @@ share: true
 ---
 
 # obsidian-github-publisher
-总的来说比较好用，用了 mkdocs 这个库来发布
-https://github.com/ObsidianPublisher/obsidian-github-publisher
+免费的 obsidian 发布方案! 非常好用! 最终你可以得到跟[官方文档](https://obsidian-publisher.netlify.app/)类似的网站（官方的16美刀/月还是太贵了...）。
 
+它的亮点
+- 支持obsidian众多基础语法
+- 将你发布的笔记复制到一个新的github仓库并通过 netlify 或者 github page变成网站! （不会修改你本地的文件）
+- 通过在meta中设置`share: true`来指定哪些文件要公开，然后通过指令`upload`上传并发布文件
+- 相比其他免费发布方案，这个用起来最顺手! 而且设置非常简单!
 
-## 我推荐的使用方法
+## 具体教程
+
+> 视频教程 coming soon!
+
 最简单的方法还是通过 netlify 部署
-
 1. 点击[官方文档](https://obsidian-publisher.netlify.app/)中的 netlify deploy <a href="https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/publisher-template-netlify"><img src="https://www.netlify.com/img/deploy/button.svg"></a>，会得到一个网站，就是你未来的博客地址，对应生成了一个 github repo
 2. 在obsidian中安装 github publisher 插件
 3. 在插件 options 中设置一下内容
@@ -75,10 +81,16 @@ https://help.obsidian.md/How+to/Use+callouts
 > [!info]
 ```
 
-
 > [!INFO] 这是标题
 > Here's a callout block.
 > It supports **markdown** and [[Internal link|wikilinks]].
+
+### 高亮
+```
+==高亮文字==
+```
+
+内容==高亮文字==内容
 
 # 其他项目
 > 2023-3-22 不过不太好用
