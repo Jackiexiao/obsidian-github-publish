@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 share: true
 ---
 # 十分钟Spacevim入门
