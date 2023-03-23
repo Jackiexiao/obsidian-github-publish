@@ -1,8 +1,24 @@
 
 ---
 alias: [obsidian publish]
+dg-publish: true
 share: true
 ---
+
+# digitalgarden-更推荐
+- [官方文档](https://dg-docs.ole.dev/)
+- [B站视频教程](https://www.bilibili.com/video/BV13V4y1c76b) : 推荐
+
+下面是两者生成的博客对比
+
+- [digital-garden](https://digitalgarden-lime.vercel.app/)
+- [github-publish](https://obsidian-github-publish.vercel.app)
+
+- 优点
+    - 比 [[#obsidian-github-publisher]] 多了很多可选项和配置主题
+    - 支持非常多[特性](https://dg-docs.ole.dev/features/)
+- 缺点
+    - 是还不支持中文搜索，见[issue](https://github.com/oleeskild/obsidian-digital-garden/issues/219)
 
 # obsidian-github-publisher
 免费的 obsidian 发布方案! 非常好用! 最终你可以得到跟[官方文档](https://obsidian-publisher.netlify.app/)类似的网站（官方的16美刀/月还是太贵了...）。
@@ -14,8 +30,6 @@ share: true
 - 相比其他免费发布方案，这个用起来最顺手! 而且设置非常简单!
 
 ## 具体教程
-
-> 视频教程 coming soon!
 
 最简单的方法还是通过 netlify 部署
 1. 点击[官方文档](https://obsidian-publisher.netlify.app/)中的 netlify deploy <a href="https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/publisher-template-netlify"><img src="https://www.netlify.com/img/deploy/button.svg"></a>，会得到一个网站，就是你未来的博客地址，对应生成了一个 github repo
