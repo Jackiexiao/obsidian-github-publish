@@ -2,7 +2,6 @@
 dg-publish: true
 share: true
 ---
-# 十分钟Spacevim入门
 来源
 * [github项目](https://github.com/Jackiexiao/10-minutes-to-SpaceVim)
 * [English version](https://github.com/Jackiexiao/10-minutes-to-SpaceVim/blob/master/README.md)
