@@ -1,12 +1,29 @@
 
 ---
 alias: [obsidian publish]
-dg-publish: true
 share: true
 ---
 
 # 前言
 obsidian官方的发布 8美刀/月还是太贵了... 而且也没办法私有化部署，现在网上也有很多obsidian免费发布的教程，但下面两个我觉得是最好的，它们都提供了 obsidian 插件，容易上手，可以只发布指定的文章，
+
+# tldr
+当前我的选择： 
+- obsidian-github-publisher
+
+why
+- SEO
+- mkdocs 我比较熟悉，可以自定义
+- 安装插件很容易，发布文章也很容易（share:true，然后运行一个 Publish的指令就行）
+
+这个方法实际上存在一堆问题
+- 可以通过在 仓库首页 `github.com/[yourname]/[your_repo]` 把 .com 换成 .dev 的方式维护 repo，比如手动删除文章然后 commit
+- 文章只要能发布就行，要求不高 lol
+
+没有采用单独为博客新建个本地仓库的原因
+- 附件照片需要自己手动复制
+- 需要手动维护两个仓库
+
 
 # 官方发布的优缺点
 一个使用官方发布的仓库: https://publish.obsidian.md/chinesehelp/
@@ -68,12 +85,14 @@ https://github.com/ObsidianPublisher/obsidian-github-publisher
 
 ## 已知问题 Known issue
 - [ ] 不支持中文搜索，作者拒绝 vercel + jieba 的 [PR](https://github.com/ObsidianPublisher/publisher-template-netlify/pull/2) ==你需要采用我的模板==
-- [ ] 如果含有header1会被错误解析（开头的标题不见）
+- [ ] 如果含有header1会被错误解析（第一个标题会被当作页面的标题 orz），这个可能是 fix_heading 带来的问题，见： https://obsidian-publisher.netlify.app/template/configuration/#hooks
+- [ ] vercel 每天只能build100次
 - [ ] 不支持 obsidian 的很多语法（可以在我的 roam link 中修改并支持，或者改进那个作者的库）
     - [ ] 不支持图片尺寸语法 如`[[image.png|200]]`
     - [ ] 不支持高亮语法
 - [ ] 官方教程写的不太好，使用 chatgpt i18n 给她自动做翻译
-- [ ] 似乎没办法直接在插件中删除发布的内容
+- [ ] 实际使用过程中总有各种bug.... 例如无法删除已发布的内容... 例如文件夹改变之后，文章地址并没有跟着变，而是多了一个副本....
+- [ ] mkdocs 默认模板并不太好看
 
 ## 具体教程
 
