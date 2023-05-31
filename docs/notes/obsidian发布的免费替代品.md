@@ -73,6 +73,7 @@ https://github.com/ObsidianPublisher/obsidian-github-publisher
     - [ ] 不支持图片尺寸语法 如`[[image.png|200]]`
     - [ ] 不支持高亮语法
 - [ ] 官方教程写的不太好，使用 chatgpt i18n 给她自动做翻译
+- [ ] 似乎没办法直接在插件中删除发布的内容
 
 ## 具体教程
 
