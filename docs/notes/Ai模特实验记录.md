@@ -1,7 +1,6 @@
 ---
 alias: [aimodel]
 share: true
-dg-publish: true
 ---
 
 https://www.zhihu.com/question/590884963
