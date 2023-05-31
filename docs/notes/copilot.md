@@ -1,21 +1,8 @@
 ---
-alias: []
 share: true
 ---
 
-# prompt
-
-generate unit tests for my code
-explain the selected code
-propose a fix for the bugs in my code
-
-
 # summary 
-## tutorial
-- 文字课程
-    - [官方教程](https://github.com/github/copilot-docs/blob/main/docs/visualstudiocode/gettingstarted.md#getting-started-with-github-copilot-in-visual-studio-code)
-- 视频课程: 
-    - [极客时间copilot](https://time.geekbang.org/opencourse/videodetail/100540901-640111?utm_source=AIGC_app_dbtab&utm_term=AIGC_pc_dt)
 
 ## install
 登入 copilot 官网，加入 waitinglist，不久后（可能一两天）就会收到邮件，这时候就可以到 vscode 商店里头下载 copilot，登录 github，然后不要忘记点击 `I agree to these telemetry term...."`，后面每次提示的时候，右下角的 copilot 都会转圈（可能是我访问外网网络不佳? 每次都要转圈圈挺久的）
