@@ -2,6 +2,7 @@
 ---
 alias: [obsidian publish]
 share: true
+comments: true
 ---
 
 # 前言
@@ -16,7 +17,7 @@ why
 - mkdocs 我比较熟悉，可以自定义
 - 安装插件很容易，发布文章也很容易（share:true，然后运行一个 Publish的指令就行）
 
-这个方法实际上存在一堆问题
+这个方法实际上存在一堆问题, 见 [[#已知问题 Known issue]]
 - 可以通过在 仓库首页 `github.com/[yourname]/[your_repo]` 把 .com 换成 .dev 的方式维护 repo，比如手动删除文章然后 commit
 - 文章只要能发布就行，要求不高 lol
 
@@ -24,6 +25,8 @@ why
 - 附件照片需要自己手动复制
 - 需要手动维护两个仓库
 
+ps: 我要使用 mkdocs-material 带的评论功能需要在 meta 中加上 `comments: true
+`
 
 # 官方发布的优缺点
 一个使用官方发布的仓库: https://publish.obsidian.md/chinesehelp/
