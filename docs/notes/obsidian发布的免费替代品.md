@@ -1,4 +1,3 @@
-
 ---
 alias: [obsidian publish]
 share: true
@@ -23,6 +22,7 @@ why
 - 文章只要能发布就行，要求不高 lol
 - 考虑到发布的时候经常有各种效果问题，建议你手动把项目下载下来，在本地`mkdocs serve`调试成你想要的博客效果
 - 养成习惯，自己设置标题（mkdocs 不会自动把文件名当作标题）为了一致性，你可以把 obsidian - apperance - inline title 给关闭掉
+- todo 不知道为什么显示了两次title，不过 whatever 不管了，可能跟 heading 有关
 
 没有采用单独为博客新建个本地仓库的原因
 - 附件照片需要自己手动复制
