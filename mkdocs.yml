@@ -2,6 +2,7 @@ site_name: jackiexiao's blog
 site_description: jackiexiao's blog
 site_url: https://blog.jackiexiao.com
 repo_name: Jackiexiao/obsidian-github-publish
+repo_url: https://github.com/jackiexiao/obsidian-github-publish
 
 theme:
     name: 'material'
@@ -12,30 +13,27 @@ theme:
         text: Ubuntu
         code: Ubuntu Mono
     language: en
-    palette:
+    palette: 
 
-    # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: teal
-      accent: light blue
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
+        # Palette toggle for light mode
+        - scheme: default
+          toggle:
+            icon: material/brightness-7 
+            name: Switch to dark mode
 
-    # Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: blue
-      accent: indigo
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+        # Palette toggle for dark mode
+        - scheme: slate
+          toggle:
+            icon: material/brightness-4
+            name: Switch to light mode
     features:
         - navigation.indexes
         - navigation.top
-        - navigation.tabs
-        - navigation.tabs.sticky
+        - navigation.instant
+        - navigation.tracking
+        # 我现在的博客内容不多，不建议开启，此外，多了一个 孤零零的Home而不参考 https://stackoverflow.com/questions/63438788/how-to-add-a-landing-page-to-a-mkdocs-doc-site-using-mkdocs-material 它来设置 Landing page 也很奇怪
+        # - navigation.tabs
+        # - navigation.tabs.sticky
         - navigation.expand
         - search.suggest
         - search.highlight
@@ -84,14 +82,14 @@ plugins:
       enable_creation_date: true
   - ezlinks:
         wikilinks: true
-  - awesome-pages
+  - awesome-pages # 通过 directory/.page 来设置导航
   - embed_file:
       callouts: true
       custom-attributes: 'assets/css/custom_attributes.css'
   - custom-attributes:
       file: 'assets/css/custom_attributes.css'
-  - tags:
-      tags_file: tags.md
+#  - tags:
+#      tags_file: tags.md
   - encryptcontent:
       title_prefix: '🔐'
       summary: 'Page privée'
