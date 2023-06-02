@@ -4,6 +4,7 @@ alias: [obsidian publish]
 share: true
 comments: true
 ---
+# obsidian发布的免费替代品
 
 # 前言
 obsidian官方的发布 8美刀/月还是太贵了... 而且也没办法私有化部署，现在网上也有很多obsidian免费发布的教程，但下面两个我觉得是最好的，它们都提供了 obsidian 插件，容易上手，可以只发布指定的文章，
@@ -20,10 +21,13 @@ why
 这个方法实际上存在一堆问题, 见 [[#已知问题 Known issue]]
 - 可以通过在 仓库首页 `github.com/[yourname]/[your_repo]` 把 .com 换成 .dev 的方式维护 repo，比如手动删除文章然后 commit
 - 文章只要能发布就行，要求不高 lol
+- 考虑到发布的时候经常有各种效果问题，建议你手动把项目下载下来，在本地`mkdocs serve`调试成你想要的博客效果
+- 养成习惯，自己设置标题（mkdocs 不会自动把文件名当作标题）为了一致性，你可以把 obsidian - apperance - inline title 给关闭掉
 
 没有采用单独为博客新建个本地仓库的原因
 - 附件照片需要自己手动复制
 - 需要手动维护两个仓库
+
 
 ps: 我要使用 mkdocs-material 带的评论功能需要在 meta 中加上 `comments: true
 `
