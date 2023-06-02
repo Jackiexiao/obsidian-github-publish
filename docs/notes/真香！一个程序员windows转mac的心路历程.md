@@ -1,7 +1,6 @@
 ---
-alias: [macOS, mac, macbook]
-dg-publish: true
 share: true
+alias: [macOS, mac, macbook]
 ---
 
 ## 写作ing
@@ -40,7 +39,6 @@ mac的系统本身也非常的优秀，就比如说他有一个Spotlight就comma
 其次是 vim 中英文切换，我使用的是 Squirrel， 它可以在写代码的时候无缝的在vim中英文中切换，教程可以在哔哩哔哩上查找
 
 初次使用MacBook真的需要安装很多软件才能让 windows的用户觉得“不别扭”， 否则我觉得你是无论如何无法适应macbook，会觉得它特别难用， 其中 [better365](https://www.better365.cn/) 的软件几乎都是必装的。
-
 
 # 实用软件
 
@@ -117,11 +115,13 @@ https://support.apple.com/zh-cn/HT201236
 cmd shift c : vscode 中打开terminal
 
 Fn 切换输入法.... keyboard 设置里头有
+fn + q 快速笔记
 cmd+K: 清除终端屏幕（cmd L 是逐行清除..）
 cmd+f3: 桌面
 cmd + q : 退出
 cmd + h: 隐藏
 cmd +m: 最小化（似乎跟 h 的不同在于必须手动重新点击？）
+control + 左右 快速切换桌面 （如果想通过 ctrl +1/2/3 来切换，见[文章](https://www.zhihu.com/question/21079800)
 **Control-Command-空格键**：显示字符检视器，你可以从中选择[表情符号和其他符号](https://support.apple.com/zh-cn/guide/mac-help/mchlp1560/mac)
 **Control-Command-F**：全屏使用 App（如果 App 支持）。
 **Shift-Command-5**：在 [macOS Mojave 或更高版本](https://support.apple.com/zh-cn/HT201260)中，拍摄截屏或录制屏幕。也可以使用 Shift-Command-3 或 Shift-Command-4 来拍摄截屏。[进一步了解截屏](https://support.apple.com/zh-cn/HT201361)。
@@ -168,37 +168,34 @@ m2 看起来性能提升没有很多，还是m1
 - 256 外挂硬盘就可以
 
 
-## 使用技巧
-- 常见问题
-    - 如何打开终端
-    - 如何全局搜索
-    - 如何双拼
-    - 全屏快捷键
-- 三指拖动远距离怎么办
-    - 三指触发拖动后，留两指保持状态，直接用另一个手的单指负责移动，适合距离超远定位要求又特别精确
-- U盘格式问题
-    - FAT32 优先推荐: 是到目前为止最被广泛认可、且最易用的文件系统格式之一。但是，FAT32也有一个非常致命的缺点就是不能存储单个文件容量大于4GB的文件，所以如果想要用这种格式存放高清电影几乎是不可能的。如果你需要存储单个文件容量大于4GB的文件，也可以选择将其格式化成 exFAT 文件系统，
-    - exFAT 但这种文件系统对于一些老系统兼容性不好，并且在一些优盘上速度很慢很慢。所以，对于一般用途来说，FAT32仍然是优盘文件系统首选。
+# faq
+
+## 终端翻墙
+https://github.com/Qingquan-Li/blog/issues/131
+    
+## mail 的设置
+我现在的所有邮件都通过系统自带的 mail 邮箱来接收了，这里记录一下常见的问题
+
+###  macos下Mail.app发邮件出现无法将一封邮件移到邮箱的解决方法
+https://danteng.org/macos-mail-app-imap-append-failed/
+
+### 腾讯企业邮箱设置
+mail 设置 -> add acount -> 选择其他邮箱 -> 填入你的帐号密码，接着会提示让你填入下面的信息：
+
+IMAP协议
+    接收邮件服务器：imap.exmail.qq.com
+    发送邮件服务器：smtp.exmail.qq.com
+
+如果IMAP协议没有开，需要到腾讯企业邮件中的“客户端设置”中开启
 
 ## os 获取包名
 osascript -e 'id of app "Finder"'
 
 将`Finder`替换成你的应用程序名字
 
-## iphone 坑爹点
-坑爹点
-- 侧滑手势很不好用，很多时候都要点击左上角的返回，[参考](https://www.zhihu.com/question/400074980)
-- 没有长截图
-- 必须看通知页面，必须滑动才能解锁
-- 没有多开
-- 进入微信之后竟然要拉取消息.... 这经常会"卡顿"一下
-## faq
-- 终端翻墙
-    https://github.com/Qingquan-Li/blog/issues/131
-    
-- mac 重置win7密码
-    - 主要参考：https://www.top-password.com/knowledge/reset-windows-password-from-mac.html
-    - 里头提供的：**PCUnlocker** 是需要付费的，需要替换成这个
-    - 破解版 unlockpc 下载地址：http://www.ddooo.com/softdown/128191.htm
+## 三指拖动远距离怎么办
+- 三指触发拖动后，留两指保持状态，直接用另一个手的单指负责移动，适合距离超远定位要求又特别精确
 
-Apple Silicon: 也就是 ARM 版本的 macbook / m1/m2
+## U盘格式问题
+- FAT32 优先推荐: 是到目前为止最被广泛认可、且最易用的文件系统格式之一。但是，FAT32也有一个非常致命的缺点就是不能存储单个文件容量大于4GB的文件，所以如果想要用这种格式存放高清电影几乎是不可能的。如果你需要存储单个文件容量大于4GB的文件，也可以选择将其格式化成 exFAT 文件系统，
+- exFAT 但这种文件系统对于一些老系统兼容性不好，并且在一些优盘上速度很慢很慢。所以，对于一般用途来说，FAT32仍然是优盘文件系统首选。
