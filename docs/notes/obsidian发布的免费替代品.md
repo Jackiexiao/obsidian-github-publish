@@ -22,6 +22,7 @@ why
 - 文章只要能发布就行，要求不高 lol
 - 考虑到发布的时候经常有各种效果问题，建议你手动把项目下载下来，在本地`mkdocs serve`调试成你想要的博客效果
 - 养成习惯，自己设置标题（mkdocs 不会自动把文件名当作标题）为了一致性，你可以把 obsidian - apperance - inline title 给关闭掉
+- 标题的最好方式： 永远只有一个 header 1 ，而且那个 header 1 就是标题/ 文件名，其他都是 header2 起步。这样就可以关闭在 mkdocs 中关闭 "fix_header"
 - todo 不知道为什么显示了两次title，不过 whatever 不管了，可能跟 heading 有关
 
 没有采用单独为博客新建个本地仓库的原因
@@ -57,15 +58,15 @@ ps: 我要使用 mkdocs-material 带的评论功能需要在 meta 中加上 `com
     - [digital-garden](https://digitalgarden-lime.vercel.app/)
     - [github-publish](https://obsidian-github-publish.vercel.app)
 
-## 优点
+## 1 优点
 - 比 [[#obsidian-github-publisher]] 多了很多可选项和配置主题
 - 支持非常多[特性](https://dg-docs.ole.dev/features/)
 - 基本支持obsidian全部语法，甚至 `%% %%` 注释的内容也会删除
 
-## 使用注意点
+## 2 使用注意点
 - 对于中文，应该关闭设置中的 `Slugify Note URL` 因为它会删除中文字符，见 [doc](https://dg-docs.ole.dev/getting-started/05-other-settings/#slugify-note-url)
 
-## 已知问题 Known issue
+## 3 已知问题 Known issue
 - [ ] 博客网站的问题-seo没有做好，另外没办法加入评论功能，没评论，就没动力
 - [ ] 不支持中文搜索 [讨论见 issue](https://github.com/oleeskild/obsidian-digital-garden/issues/219)
 - [ ] 纯链接例如: https://baidu.com 会被解析为纯文本而不是 链接
@@ -86,11 +87,11 @@ https://github.com/ObsidianPublisher/obsidian-github-publisher
 - 将你发布的笔记复制到一个新的github仓库并通过 netlify 或者 github page变成网站! （不会修改你本地的文件）
 - 通过在meta中设置`share: true`来指定哪些文件要公开，然后通过指令`upload`上传并发布文件
 
-## 优点
+## 1 优点
 - 基于 python + mkdocs，你可以方便的自定义
 - 静态网站，SEO友好
 
-## 已知问题 Known issue
+## 2 已知问题 Known issue
 - [ ] 不支持中文搜索，作者拒绝 vercel + jieba 的 [PR](https://github.com/ObsidianPublisher/publisher-template-netlify/pull/2) ==你需要采用我的模板==
 - [ ] 如果含有header1会被错误解析（第一个标题会被当作页面的标题 orz），这个可能是 fix_heading 带来的问题，见： https://obsidian-publisher.netlify.app/template/configuration/#hooks
 - [ ] vercel 每天只能build100次
@@ -101,7 +102,7 @@ https://github.com/ObsidianPublisher/obsidian-github-publisher
 - [ ] 实际使用过程中总有各种bug.... 例如无法删除已发布的内容... 例如文件夹改变之后，文章地址并没有跟着变，而是多了一个副本....
 - [ ] mkdocs 默认模板并不太好看
 
-## 具体教程
+## 3 具体教程
 
 最简单的方法还是通过 netlify 部署
 1. 点击[官方文档](https://obsidian-publisher.netlify.app/)中的 netlify deploy <a href="https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/publisher-template-netlify"><img src="https://www.netlify.com/img/deploy/button.svg"></a>，会得到一个网站，就是你未来的博客地址，对应生成了一个 github repo
