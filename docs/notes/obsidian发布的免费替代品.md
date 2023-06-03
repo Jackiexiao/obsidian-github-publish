@@ -24,6 +24,7 @@ why
 - 养成习惯，自己设置标题（mkdocs 不会自动把文件名当作标题）为了一致性，你可以把 obsidian - apperance - inline title 给关闭掉
 - 标题的最好方式： 永远只有一个 header 1 ，而且那个 header 1 就是标题/ 文件名，其他都是 header2 起步。这样就可以关闭在 mkdocs 中关闭 "fix_header"
 - todo 不知道为什么显示了两次title，不过 whatever 不管了，可能跟 heading 有关
+- `api-deployments-free-per-day` 我触发的次数应该不多才对.... 为什么很快就用完了， 在这里可以看到触发的次数： https://vercel.com/dashboard/activity  似乎是每个 commit 触发一次，如何解决呢， 似乎是在 https://vercel.com/jackiexiao/obsidian-github-publish/settings/git 中的 Ignored Build Step 中解决
 
 没有采用单独为博客新建个本地仓库的原因
 - 附件照片需要自己手动复制
