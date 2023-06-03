@@ -21,7 +21,7 @@ share: true
 
 你还可以在任何网页`Ctrl + P`打开侧边栏继续跟 chatgpt 聊天，让它继续解释刚才的概念
 
-![[Pasted image 20230531220651.png]]
+![[Pasted image 20230603104657.png]]
 
 ## Raycast / Utools 的 chatgpt 插件
 
