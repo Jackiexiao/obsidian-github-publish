@@ -1,6 +1,7 @@
 ---
 alias: [template, scaffold, 仓库模板, 模板购买, buy-template]
 share: true
+comments: true
 ---
 # github-framework-template
 [[awesome]]
@@ -40,6 +41,8 @@ https://tailwindui.com/templates (比较贵99美元）
 这个几乎是 nextjs 项目最佳实践的模板 
 https://github.com/steven-tey/precedent
 
+admin 模板
+https://github.com/marmelab/react-admin
 https://www.koudaizy.com/code/one-react-next-jsheant-designguanliyuanmoban/
 
 ## 2 python
@@ -87,7 +90,6 @@ https://justdjango.com/blog/chat-app-django-channels
     - [GitHub - rigtorp/awesome-modern-cpp: A collection of resources on modern C++](https://github.com/rigtorp/awesome-modern-cpp) 
 - [GitHub - xyz1001/cppiniter: 初始化一个C++项目](https://github.com/xyz1001/cppiniter)
     - 一个很简单的脚手架
-- zhuiyi 脚手架: [code.in.wezhuiyi.com/ivc/cpp server skeleton](https://code.in.wezhuiyi.com/ivc/cpp-server-skeleton) 
 - javascript / typescript
 - [https://github.com/zce/caz](https://github.com/zce/caz) 
 

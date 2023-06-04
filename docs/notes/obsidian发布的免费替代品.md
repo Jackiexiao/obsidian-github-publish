@@ -5,39 +5,13 @@ comments: true
 ---
 # obsidian发布的免费替代品
 
-# 前言
-obsidian官方的发布 8美刀/月还是太贵了... 而且也没办法私有化部署，现在网上也有很多obsidian免费发布的教程，但下面两个我觉得是最好的，它们都提供了 obsidian 插件，容易上手，可以只发布指定的文章，
+## 前言
+现在很多笔记软件都能很轻松地分享自己的笔记给别人/或者搭建自己的博客，例如 notion/飞书，而且是免费的，但很可惜这在obsidian上是付费的（4美刀）
 
-# tldr
-当前我的选择： 
-- obsidian-github-publisher
+现在网上也有很多obsidian免费发布的教程，但下面两个我觉得是最好的，它们都提供了 obsidian 插件，容易上手，可以只发布指定的文章，
 
-why
-- SEO
-- mkdocs 我比较熟悉，可以自定义
-- 安装插件很容易，发布文章也很容易（share:true，然后运行一个 Publish的指令就行）
-
-这个方法实际上存在一堆问题, 见 [[#已知问题 Known issue]]
-- 可以通过在 仓库首页 `github.com/[yourname]/[your_repo]` 把 .com 换成 .dev 的方式维护 repo，比如手动删除文章然后 commit
-- 文章只要能发布就行，要求不高 lol
-- 考虑到发布的时候经常有各种效果问题，建议你手动把项目下载下来，在本地`mkdocs serve`调试成你想要的博客效果
-- 养成习惯，自己设置标题（mkdocs 不会自动把文件名当作标题）为了一致性，你可以把 obsidian - apperance - inline title 给关闭掉
-- 标题的最好方式： 永远只有一个 header 1 ，而且那个 header 1 就是标题/ 文件名，其他都是 header2 起步。这样就可以关闭在 mkdocs 中关闭 "fix_header"
-- todo 不知道为什么显示了两次title，不过 whatever 不管了，可能跟 heading 有关
-- `api-deployments-free-per-day` 我触发的次数应该不多才对.... 为什么很快就用完了， 在这里可以看到触发的次数： https://vercel.com/dashboard/activity  似乎是每个 commit 触发一次，如何解决呢， 似乎是在 https://vercel.com/jackiexiao/obsidian-github-publish/settings/git 中的 Ignored Build Step 中解决
-
-没有采用单独为博客新建个本地仓库的原因
-- 附件照片需要自己手动复制
-- 需要手动维护两个仓库
-
-
-ps: 我要使用 mkdocs-material 带的评论功能需要在 meta 中加上 `comments: true
-`
-
-# 官方发布的优缺点
+## 官方发布的优缺点
 一个使用官方发布的仓库: https://publish.obsidian.md/chinesehelp/
-
-更新时间: 2023-4-23
 
 - 优点
    - 完全兼容 obsidian 的语法
@@ -45,12 +19,14 @@ ps: 我要使用 mkdocs-material 带的评论功能需要在 meta 中加上 `com
    - SEO
    - 支持各种自定义主题
 - 缺点
-    - 很贵，8美刀/月
+    - 较贵，4美刀/月（以前8美元）
     - 只能搜索 page + heading，无法全文搜索
     - 没有评论功能
+    - 教难定制化
+    - 无法私有化部署
 
-# digitalgarden-推荐
-
+## digitalgarden-推荐
+- 我的案例： https://b.jackiexiao.com/
 - [官方文档](https://dg-docs.ole.dev/)
 - [官方github仓库](https://github.com/oleeskild/obsidian-digital-garden)
 - [B站视频教程](https://www.bilibili.com/video/BV13V4y1c76b) : 推荐
@@ -59,15 +35,15 @@ ps: 我要使用 mkdocs-material 带的评论功能需要在 meta 中加上 `com
     - [digital-garden](https://digitalgarden-lime.vercel.app/)
     - [github-publish](https://obsidian-github-publish.vercel.app)
 
-## 1 优点
+### 1 优点
 - 比 [[#obsidian-github-publisher]] 多了很多可选项和配置主题
 - 支持非常多[特性](https://dg-docs.ole.dev/features/)
 - 基本支持obsidian全部语法，甚至 `%% %%` 注释的内容也会删除
 
-## 2 使用注意点
+### 2 使用注意点
 - 对于中文，应该关闭设置中的 `Slugify Note URL` 因为它会删除中文字符，见 [doc](https://dg-docs.ole.dev/getting-started/05-other-settings/#slugify-note-url)
 
-## 3 已知问题 Known issue
+### 3 已知问题 Known issue
 - [ ] 博客网站的问题-seo没有做好，另外没办法加入评论功能，没评论，就没动力
 - [ ] 不支持中文搜索 [讨论见 issue](https://github.com/oleeskild/obsidian-digital-garden/issues/219)
 - [ ] 纯链接例如: https://baidu.com 会被解析为纯文本而不是 链接
@@ -78,8 +54,10 @@ ps: 我要使用 mkdocs-material 带的评论功能需要在 meta 中加上 `com
 - [ ] 网站字体偏大，多层级文件夹需要自己手动展开
 - [ ] 没有评论功能
 
-# obsidian-github-publisher
+## obsidian-github-publisher
 https://github.com/ObsidianPublisher/obsidian-github-publisher
+
+- 我的案例： https://blog.jackiexiao.com/
 
 最终你可以得到跟[官方文档](https://obsidian-publisher.netlify.app/)类似的网站
 
@@ -88,22 +66,21 @@ https://github.com/ObsidianPublisher/obsidian-github-publisher
 - 将你发布的笔记复制到一个新的github仓库并通过 netlify 或者 github page变成网站! （不会修改你本地的文件）
 - 通过在meta中设置`share: true`来指定哪些文件要公开，然后通过指令`upload`上传并发布文件
 
-## 1 优点
+### 1 优点
 - 基于 python + mkdocs，你可以方便的自定义
 - 静态网站，SEO友好
 
-## 2 已知问题 Known issue
-- [ ] 不支持中文搜索，作者拒绝 vercel + jieba 的 [PR](https://github.com/ObsidianPublisher/publisher-template-netlify/pull/2) ==你需要采用我的模板==
+### 2 已知问题 Known issue
+- [ ] 不支持中文搜索，作者拒绝 vercel + jieba 的 [PR](https://github.com/ObsidianPublisher/publisher-template-netlify/pull/2) 
 - [ ] 如果含有header1会被错误解析（第一个标题会被当作页面的标题 orz），这个可能是 fix_heading 带来的问题，见： https://obsidian-publisher.netlify.app/template/configuration/#hooks
-- [ ] vercel 每天只能build100次
+- [ ] vercel 每天只能build 100次 需要设置
 - [ ] 不支持 obsidian 的很多语法（可以在我的 roam link 中修改并支持，或者改进那个作者的库）
     - [ ] 不支持图片尺寸语法 如`[[image.png|200]]`
     - [ ] 不支持高亮语法
-- [ ] 官方教程写的不太好，使用 chatgpt i18n 给她自动做翻译
+- [ ] 官方教程写的不太好
 - [ ] 实际使用过程中总有各种bug.... 例如无法删除已发布的内容... 例如文件夹改变之后，文章地址并没有跟着变，而是多了一个副本....
-- [ ] mkdocs 默认模板并不太好看
 
-## 3 具体教程
+### 3 具体教程
 
 最简单的方法还是通过 netlify 部署
 1. 点击[官方文档](https://obsidian-publisher.netlify.app/)中的 netlify deploy <a href="https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/publisher-template-netlify"><img src="https://www.netlify.com/img/deploy/button.svg"></a>，会得到一个网站，就是你未来的博客地址，对应生成了一个 github repo
@@ -136,5 +113,8 @@ extra:
 ```
 
 
-# 其他
-如果不想折腾，真的，弄个 wordpress 站点就挺好的....
+如果有人看到这里并且期望更加详细的，适配中文的模板，可以评论中留言 @jackiexiao 我有可能会做更详细的教程
+
+## 未来
+
+有空我可能会探索一下 nextjs/react + obsidian 的方式（or docusaurus），那样定制化就更方便了
