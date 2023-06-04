@@ -18,3 +18,5 @@ share: true
 欢迎跟我交流，黑客马拉松组队也可以喊上我。
 
 Solve intelligence and then use that to solve everything else
+
+{{ blog_content }}

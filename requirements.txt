@@ -14,4 +14,5 @@ mkdocs-meta-descriptions-plugin
 mkdocs-glightbox
 mkdocs-minify-plugin
 mkdocs-exclude
+mkdocs-blogging-plugin
 jieba==0.42.1
