@@ -136,6 +136,9 @@ extra:
   hooks:
     strip_comments: true
     fix_heading: true
+  analytics: # see https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/#setting-up-site-analytics
+    provider: google
+    property: G-8X2Q4RW6RW
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/realjackiexiao
