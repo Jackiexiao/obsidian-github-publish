@@ -1,11 +1,11 @@
 ---
-alias: [template, scaffold, 仓库模板, 模板购买, buy-template]
+alias: [template, scaffold, 仓库模板, 模板购买, buy-template, Boilerplates]
 share: true
 comments: true
 ---
 # github-framework-template
 [[awesome]]
-[[awesome-indie-tools|独立开发者工具]]
+[[awesome-indie-tools-独立开发者工具|独立开发者工具]]
 
 # graph
 [[codecov]]
@@ -32,18 +32,39 @@ https://docusaurus.io/docs (这里做了一堆文档类开源工具的比较， 
 
 # 按语言分类
 ## 1 javascript
-### 1.1 react nextjs
-#### 1.1.1 模板网站
+### 模板网站
+https://www.creative-tim.com/
 https://vercel.com/templates/next.js
 https://tailwindui.com/templates (比较贵99美元）
+mui store material-ui 也有一些付费模板（支持多语种，light/dark mode 等等超级多高级功能，买这些就很方便）
 
-#### 1.1.2 我推荐的模板
-这个几乎是 nextjs 项目最佳实践的模板 
-https://github.com/steven-tey/precedent
+### 模板生成
+> 根据你的需求生成项目的脚手架 
 
-admin 模板
-https://github.com/marmelab/react-admin
-https://www.koudaizy.com/code/one-react-next-jsheant-designguanliyuanmoban/
+- [superplate类似refine，似乎更好用一点](https://github.com/pankod/superplate) ==推荐== 可以看到现在很多最佳实践
+- [refine: 根据你的需求生成各类react框架+ui+crud模板 11k stars](https://refine.dev/) 非常适合作为项目通用脚手架
+
+### nextjs
+- [nextjs最佳实践的模板3.2k stars](https://github.com/steven-tey/precedent): auth/prisma orm/tailwindcss radix
+- [nextjs+electron 2.2k stars](https://github.com/saltyshiomix/nextron)
+- [nextjs企业级模板3.4k stars](https://github.com/Blazity/next-enterprise)
+- [完整的pwa支持示例-包含教程](https://github.com/shadowwalker/next-pwa)
+- **推荐** mui+i18n  https://github.com/SimonsMeldzers/inin-estate
+    
+#### 初学者模板
+- [非常简单的多语种+pwa+mui项目-100stars](https://github.com/kiri-art/stable-diffusion-react-nextjs-mui-pwa)
+- [nextjs官方极简pwa](https://github.com/vercel/next.js/tree/canary/examples/progressive-web-app)
+- [pwa+mui的极简todolist](https://github.com/ooade/NextSimpleStarter)
+- [mui官方提供的nextjs 简单template](https://github.com/mui/material-ui/tree/master/examples/material-next-ts)
+
+#### 博客模板
+https://statichunt.com/themes/nextjs-hydrogen
+
+#### 其他
+[电商网站+nextjs](https://github.com/sadmann7/skateshop)
+- https://github.com/kiri-art/stable-diffusion-react-nextjs-mui-pwa
+- https://github.com/HPouyanmehr/theBag 
+-  https://github.com/hiriski/coursespace-landing-page
 
 ## 2 python
 - https://github.com/rochacbruno/python-project-template
