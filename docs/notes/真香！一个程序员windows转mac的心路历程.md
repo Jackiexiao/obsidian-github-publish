@@ -30,7 +30,7 @@ mac的系统本身也非常的优秀，就比如说他有一个Spotlight就comma
 最后跟大家分享一下，我在折腾MacBook过程中遇到了一些常见的问题以及解决方案，最后会给大家分享一下非常推荐给个人/程序员安装的一些实用效率软件
 
 
-# window迁移到macbook
+# 真香！一个程序员windows转mac的心路历程
 
 从windows迁移到MacBook一定要看教程， 这两个系统的差异性实在太大了，你需要折腾很久，才能让获得非常舒适的使用体验，B站上已经有很多， 这里分享一些我自己的经验
 
@@ -131,6 +131,9 @@ control + 空格 : 切换输入法
 cmd + d （学名:复制） == 复制 + 粘贴
 cmd + c（学名:拷贝） == ctrl + c
 cmd + c 以及 cmd + option + v 实现剪切功能（要不就直接拖动）
+
+## trick
+keyboard->text_input->text replacement 可以设置常见短语来替换，比如设置 `aphone` -> `你的手机号码`，电脑输入完成按空格或继续输入其他字符就替换，按enter就正常输入`aphone`
 
 ## macbook 上手指南
 最佳快速入门教程-半小时: https://www.bilibili.com/video/BV1PF411E7LG/
