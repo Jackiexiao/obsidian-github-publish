@@ -5,6 +5,16 @@ comments: true
 ---
 # obsidian发布的免费替代品
 
+## log
+
+2023-11-30
+> 但官方发布太贵了，教育优惠400元/年... 我之前也折腾蛮久了
+
+官方publish 不支持 评论，可以通过这个解决
+https://garden.sparrow.zone/Integrating+Comments+in+Obsidian+Publish
+or 这个
+https://polyrain.dev/blogs/2021/Getting+comments+on+my+Obsidian+Publish+site
+
 ## 前言
 现在很多笔记软件都能很轻松地分享自己的笔记给别人/或者搭建自己的博客，例如 notion/飞书，而且是免费的，但很可惜这在obsidian上是付费的（4美刀）
 
