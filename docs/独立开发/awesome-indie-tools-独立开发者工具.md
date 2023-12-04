@@ -1,15 +1,144 @@
 ---
-alias: [独立开发者工具, devtools]
+aliases:
+  - 独立开发者工具
+  - devtools
+  - awesome-tools
 share: true
 ---
 
 # awesome-indie-tools-独立开发者工具
 
+## graph
+[[独立开发-全栈工程师-技术向|indie]]
+
+## tool source
+https://space.bilibili.com/239828907
+
+## inbox
+
+
+https://github.com/LC044/WeChatMsg
+
+2023-11-26
+
+一个包含 网站 和浏览器 项目的 开源 github （源码价值几万块 [Doge]） 你可以这么认为
+https://github.com/all-in-aigc/gpts-works
+
+tailwindcss 的模板 （比如 gpt 导航站就是用这个）
+https://tailspark.co/
+
+不要花太多时间，去研究什么时间管理，笔记软件，个人提升之类东西，这些都是「中间目标」。多想想这些中间目标是给什么「最终目标」服务的，直接去实现想要实现的「最终目标」。很多人都在追求中间目标迷失了，忘记了最终目标是什么，白白浪费了太多了时间。
+
+==不要花太多时间研究“中间目标”==
+
+**人类的进步是为了解决某个问题，而且是解决切身，实际需要解决的问题，这种才是创业的根源**  **顿悟！**
+
+
+为何需要有自己的服务！！ 因为审查太多了...
+
+11Labs 官网会记录语音合成的文字内容，我看到，Dolores 的回复内容通常都是一些成人内容，而且均为女性角色，因此我推测 Dolores 的付费用户主要是男性，对成人角色扮演感兴趣。
+
+2023-11-26
+https://www.bilibili.com/video/BV1cu411F7FN/
+**发现现在利用 k8s 做私有云，聊天机器人，私有知识库，接入微信，企业微信 api 都非常成熟了....**
+震惊我一脸，现在最重要的事情就是做一个产品出来...
+
+为什么程序员最应该学习的是运营与销售，而不是技术
+https://yufengbiji.com/posts/why-should-programmers-learn-operations-and-sales-more-than-technology
+我们那么努力的学习专业知识，卷八股文，卷实习，卷算法，卷面试，到头来居然是为了给别人打工并换取微薄的工资（相较于老板）
+
+2023-11-25
+还可以用赞赏码
+![[Pasted image 20231125102301.png|100]]
+
+
+2023-11-18
+screenshot-to-code https://github.com/abi/screenshot-to-code 一个开源的 Web 应用，用户上传一张网页截图，它会通过 OpenAI，给出该网页的 HTML/Tailwind/JS 代码实现。
+
+AITDK.com 用户输入文章的主题，该网页工具会自动生成 SEO 友好的标题、描述、关键词和常见问题解答
+
+2023-11-12 开源智能客服机器人： https://github.com/labring/FastGPT
+这个很好用啊，以后自己要弄一个客服回答就用这个
+
+
+博客自动翻译为英文
+https://github.com/linyuxuanlin/Auto-i18n
+
+一个海外全栈开发者的“工具清单”，值得参考！
+https://getwaitlist.com/blog/solo-dev-startup-stack
+
+python 性能分析工具
+https://github.com/joerick/pyinstrument
+```
+$ pip install pyinstrument 
+$ pyinstrument temp.py
+```
+
+vizro: 低代码的数据可视化应用程序 基于 plotly 和 dash 库 （有那么点像 streamlit）
+
+https://github.com/raidendotai/openv0 AI生成组件
+
+python 写web 前端（但我倾向于 vercel v0）： https://github.com/reflex-dev/reflex
+
+SES 是亚马逊的邮件发送服务， 或者使用 substack 来发送自己的文章更新记录
+
+vercel v0 ！！ AI 自动生成前端！！ tailwindcss + shadcn!! 超级无敌好用好吧。牛逼！
+
+查看磁盘空间的工具，总体更加直观，可以跨平台使用
+https://github.com/chenquan/diskusage 
+
+vegeta: http性能测试工具，可以导出为 普罗米修斯查看
+
+这个牛逼，支持**微信支付，微信登录**，不需要注册公司，以后看它怎么实现的！！！！
+https://github.com/Licoy/ChatGPT-Midjourney
+
+一个 api status 的应用！！ 竟然是完全开源的，牛逼。集合了很多web最佳实践
+https://www.openstatus.dev/
+
+logto （类似 clerk，好用很多！！）
+
+retake 更好用的chatgpt 向量数据库
+
+grpc Curl 工具
+https://github.com/fullstorydev/grpcurl
+
+类似 pm2 的通用进程管理工具：  servicer github (在systemd 上进行封装）
+https://servicer.dev/
+
+邮件订阅服务
+list-manage.com
+
+
+邮件订阅
+https://convertkit.com/
+
+文章付费
+https://gumroad.com/
+
+创业公司发布渠道
+https://weilaimeixue.notion.site/weilaimeixue/cfa22127e96a422cadcf70f6645cb3de?v=26ae621c91c94608972f0c559f668229
+国内还有一个： PartnerShare.cn
+
+azure 官方提供的类 chatgpt-next 工具，一键部署，只管付费
+https://github.com/microsoft/azurechatgp
+
 小鹅通：1分钟搭建自己的知识商铺（这个感觉很好用）5299/年，如果要微信小程序，需要额外付费 1888/年（我才明白那么多商家的小程序都是通过这种现成的网站实现的...真提供一整套营销管理方案.... 试用一下可以学到很多运营知识）
 https://xiaoe-tech.com/
 
+用AI创建自己的网站
+https://usestyle.ai/
+
+立即将任何流程转化为逐步指南。
+这个简单的AI工具用于在几分钟内创建逐步指南、教程、SOP和演示。
+🔗 http://getscribe.how/chrome
+
 ## 能外包的尽量外包
 小程序模板，小程序开发商
+
+# inbox
+AI代码翻译器，支持1.6w字符（大概500行代码）至少能翻译的上下文比 copilot chat 多
+https://github.com/JustAIGithub/AI-Code-Convert
+因为它用了： gpt-3.5-turbo-16k
 
 # graph
 [[serverless云开发]]

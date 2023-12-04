@@ -23,7 +23,6 @@ spectral-normalization
 
 ## tldr
 
-
 让该层参数稳定下来，避免梯度消失或者梯度爆炸，加快收敛、训练速度
 
 bn
@@ -138,6 +137,24 @@ $$\mu_{n}(x)=\frac{1}{C H W} \sum_{c=1}^{C} \sum_{h=1}^{H} \sum_{w=1}^{W} x_{n c
 
 $$\sigma_{n}(x)=\sqrt{\frac{1}{C H W} \sum_{c=1}^{C} \sum_{h=1}^{H} \sum_{w=1}^{W}\left(x_{n c h w}-\mu_{n}(x)\right)^{2}+\epsilon}$$
 
+```python
+class LayerNorm(nn.Module):
+    def __init__(self, d_model, eps=1e-12):
+        super(LayerNorm, self).__init__()
+        self.gamma = nn.Parameter(torch.ones(d_model))
+        self.beta = nn.Parameter(torch.zeros(d_model))
+        self.eps = eps
+
+    def forward(self, x):
+        mean = x.mean(-1, keepdim=True)
+        var = x.var(-1, unbiased=False, keepdim=True)
+        # '-1' means last dimension. 
+
+        out = (x - mean) / torch.sqrt(var + self.eps)
+        out = self.gamma * out + self.beta
+        return out
+```
+
 继续采用上一节的类比，把一个 batch 的 feature 类比为一摞书。LN 求均值时，相当于把每一本书的所有字加起来，再除以这本书的字符总数：C×H×W，即求整本书的“平均字”，求标准差时也是同理。
 
 **注意** 在 seq 模型中 Layer normalization 的输入和输出的维度都为（batch_size, sequence_length, hidden_size），其中：
@@ -177,7 +194,7 @@ print('diff={}'.format(diff)) # 差别和官方版本数量级在 1e-5
 ```
 
 ## Instance Normalization
-> 得到 N * C 个均值
+> 得到 N * C 个均值，只在 H  x W 上操作
 
 IN一般用于**生成任务和风格迁移任务**，因为这种任务会对细节特征有高要求，直观可以理解为更细粒度的特征区分要求
 
@@ -296,7 +313,7 @@ $$\boldsymbol{w}=\frac{g}{\|\boldsymbol{v}\|}\boldsymbol{v}$$
 WN的做法是将权值向量  $W$
  在其欧氏范数和其方向上解耦成了参数向量  $\vec{v}$ $\boldsymbol{v}$ 和参数标量 $g$
  后使用SGD分别优化这两个参数。
- 
+
 weight_g、weight_v都会进行更新，各自独立更新，文中解释了，这样更新比单独更新W会更加稳定训练。
 
 WN也是和样本量无关的，所以可以应用在batchsize较小以及RNN等动态网络中；另外BN使用的基于mini-batch的归一化统计量代替全局统计量，相当于在梯度计算中引入了噪声。而WN则没有这个问题，所以在生成模型，强化学习等噪声敏感的环境中WN的效果也要优于BN。
@@ -327,8 +344,6 @@ Spectral normalization for generative adversarial network” (以下简称 Spect
 **矩阵$A$（或者说网络的权重）除以它的 spectral norm（$A^TA$最大特征值的开根号$\sqrt{\lambda_1}$）可以使其具有 1-Lipschitz continuity**。(证明在这里[谱归一化](https://link.zhihu.com/?target=https%3A//blog.csdn.net/StreamRock/article/details/83539937))
 
 判别器 D 使用了 Spectral norm 之后，就不能使用 BatchNorm (或者其它 Norm) 了。 原因也很简单，因为 Batch norm 的“除方差”和“乘以缩放因子”这两个操作很明显会破坏判别器的 Lipschitz 连续性。
-
-
 
 
 ## 总结
