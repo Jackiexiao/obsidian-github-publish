@@ -2,6 +2,66 @@
 share: true
 alias: [macOS, mac, macbook]
 ---
+## faq
+### 如何解决屏保landscape 过多
+https://www.reddit.com/r/MacOS/comments/16t0dai/i_just_downloaded_way_too_many_gb_of_wallpapers/
+
+### 磁盘空间占用
+
+* 系统设置里头的 storage 来查看
+* 用 OmniDiskSweeper 可以看到每个文件夹的具体大小
+- 腾讯 lemon 
+
+### finder中打开终端
+
+最容易记忆的方式是，拖动文件夹到终端，如果是 cmd + 拖动会直接 cd
+
+只能说特别麻烦（除非你设置一个新的快捷键
+
+下面这个只能在文件夹上右键操作
+
+![[Pasted image 20231111221016.png]]
+
+### 自动切换输入法
+https://sspai.com/post/77870 这里列举了大量已有的应用
+- switchkey 不推荐！不好用
+
+最终选择 input source pro ，看来未来可能付费（目前不用），效果也好一些
+https://inputsource.pro/zh-CN
+2023-11-11 感觉很好用，我喜欢！
+这种官网界面很简洁，爱了 以后也要做类似的页面
+
+### 录屏自带无声
+用 loopback； 安装上稍微有点麻烦（需要重启电脑两次），但按照它的指示和教程一步步来就行
+教程： https://www.youtube.com/watch?v=-aTCbnc-0Dk
+
+然后录屏的时候选择你设置的虚拟音频来源（这个虚拟音频来源于你在 loopback中的设置）就行
+
+Omi 录屏专家 好像也可以，我没测试
+
+### 常见问题
+OmniDiskSweeper: 查看磁盘空间占用
+Buhocleaner:  （破解版）
+
+option command + V 是剪贴（还是 command c 选择文件
+
+卡死按 command option + esc 键
+或者原地等待30秒，会自动重启好像...
+
+### 跟window共享文件
+
+https://support.apple.com/en-sg/guide/mac-help/mchlp1657/mac
+
+smb://10.0.33.28
+
+然后 window 浏览器访问
+```
+\\10.0.33.28
+```
+输入用户名和密码就可以了
+
+注意这玩意是有点不安全的
+
 
 ## 写作ing
 
@@ -111,6 +171,7 @@ https://support.apple.com/zh-cn/HT201236
  setting touchpad 中查看各种手势的用法（到那个地方复习就行了）
 
 个人最常用
+cmd shift / : 打开帮助（可以搜索快捷键！！）
 
 cmd shift c : vscode 中打开terminal
 
@@ -179,6 +240,8 @@ https://github.com/Qingquan-Li/blog/issues/131
 ## mail 的设置
 我现在的所有邮件都通过系统自带的 mail 邮箱来接收了，这里记录一下常见的问题
 
+QQ 邮箱： 需要使用授权码，不是“正常”的密码，具体网络上查一下
+如果报错，可能要在 macOS mail 中删除 QQ 邮箱帐号，再重新添加
 ###  macos下Mail.app发邮件出现无法将一封邮件移到邮箱的解决方法
 https://danteng.org/macos-mail-app-imap-append-failed/
 
