@@ -1,9 +1,20 @@
 ---
-alias: [大模型微调, 定制化模型, AI数字分身, langchain, finetune-gpt, chatgpt微调]
+aliases:
+  - 大模型微调
+  - 定制化模型
+  - AI数字分身
+  - langchain
+  - finetune-gpt
+  - chatgpt微调
+  - autogen
 share: true
 ---
 
 # LLM+知识库
+## recent
+2023-10-16 可以用 [autogen](https://github.com/microsoft/autogen) 来代替 langchain
+2023-08-06： 我也认为 [langchain 将简单的问题复杂化了](https://mp.weixin.qq.com/s/Iwe6M391b2BBWae-HmOIJQ)，推荐使用[simple ai chat](https://github.com/minimaxir/simpleaichat), 或者其他替代品 AutoChain Chidori
+
 ## graph
 [[ai能帮我做什么-idea|what can ai do for me， AI能帮我做什么]] 可以跟prompt library结合，另外展示形式可以参考： https://www.deepdhai.com/
 
